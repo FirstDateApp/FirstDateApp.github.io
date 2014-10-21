@@ -17,8 +17,43 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlanCtrl', function($scope) {
-	console.log('PlanCtrl');
+.controller('PlanCtrl', function($scope, LocationsAPI) {
+	$scope.data = {};
+	$scope.lat = "0";
+	$scope.lng = "0";
+	$scope.accuracy = "0";
+	$scope.error = "";
+	
+	$scope.showPosition = function (position){
+		$scope.lat = position.coords.latitude;
+		$scope.lng = position.coords.longitude;
+		$scope.accuracy = position.coords.accuracy;
+				
+		LocationsAPI.jsonp_query({type:'restaurant', radius:'25', publisher:'10000005199', lat:$scope.lat, lon:$scope.lng, format:'json', callback:'JSON_CALLBACK'}, function(data) {
+			$scope.issues = data.results.locations;
+		
+		});
+		
+		
+	}
+	
+		
+	$scope.showError = function(error) {
+		
+	}
+	
+	$scope.getLocation = function () {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition($scope.showPosition, $scope.showError);
+			
+		}
+	}
+	
+	$scope.getLocation();
+	
+	
+				
+	
 })
 
 .controller('ActivitiesCtrl', function($scope, Activities) {

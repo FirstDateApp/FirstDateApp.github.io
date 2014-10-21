@@ -46,3 +46,8 @@ angular.module('starter.services', [])
     }
   }
 })
+
+
+.factory('LocationsAPI', function($resource){
+	return $resource('https://api.github.com/repos/angular/angular.js/issues', {})
+})

@@ -1,5 +1,16 @@
 <ion-view title="Plan a Date">
   <ion-content class="padding">
     <h1>Plan</h1>
-  </ion-content>
+    <table class="table table-striped">
+  <tr>
+    <th>{{lat}}</th>
+    <th>{{lng}}</th>
+    <th>Reporter</th>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <tr ng-repeat="issue in data.issues">
+    <td>{{issue.name}}</td>
+     </tr>
+</table> </ion-content>
 </ion-view>

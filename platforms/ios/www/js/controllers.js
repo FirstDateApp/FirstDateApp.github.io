@@ -17,7 +17,11 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlanCtrl', function($scope) {
+.controller('PlanCtrl', function($scope, LocationsAPI) {
+	$scope.data = {};
+	LocationsAPI.query(function(response){
+		$scope.data.issues = response;
+	});
 	console.log('PlanCtrl');
 })
 
