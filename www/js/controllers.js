@@ -17,13 +17,18 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlanCtrl', function($scope, LocationsAPI) {
+.controller('PlanCtrl', ['$scope', 'GoogleMapApi'.ns(), 'LocationsAPI', function($scope,GoogleMapApi, LocationsAPI ) {
 	$scope.data = {};
 	$scope.lat = "0";
 	$scope.lng = "0";
 	$scope.accuracy = "0";
 	$scope.error = "";
-	
+	$scope.map = {
+			center: {
+				latitude: $scope.lat,
+				longitude: $scope.lng
+    		},
+			zoom: 12};
 	$scope.showPosition = function (position){
 		$scope.lat = position.coords.latitude;
 		$scope.lng = position.coords.longitude;
@@ -31,7 +36,13 @@ angular.module('starter.controllers', [])
 				
 		LocationsAPI.jsonp_query({type:'restaurant', radius:'25', publisher:'10000005199', lat:$scope.lat, lon:$scope.lng, format:'json', callback:'JSON_CALLBACK'}, function(data) {
 			$scope.issues = data.results.locations;
-		
+			$scope.map ={
+			center: {
+				latitude: $scope.lat,
+				longitude: $scope.lng
+    		},
+			zoom: 12,
+			refresh: true};						
 		});
 		
 		
@@ -49,12 +60,16 @@ angular.module('starter.controllers', [])
 		}
 	}
 	
-	$scope.getLocation();
 	
+	GoogleMapApi.then(function(maps) {
+		$scope.getLocation();        
+		
+			});
 	
+
 				
 	
-})
+}])
 
 .controller('ActivitiesCtrl', function($scope, Activities) {
   $scope.activities = Activities.all();

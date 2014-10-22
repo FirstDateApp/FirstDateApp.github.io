@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['ngResource'])
 
 /**
  * A simple example service that returns some data.
@@ -49,5 +49,10 @@ angular.module('starter.services', [])
 
 
 .factory('LocationsAPI', function($resource){
-	return $resource('https://api.github.com/repos/angular/angular.js/issues', {})
+	return $resource('https://api.citygridmedia.com/content/places/v2/search/latlon', {}, {
+		jsonp_query: {
+			method: 'JSONP'
+			}
+	});		
 })
+
