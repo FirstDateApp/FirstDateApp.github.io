@@ -1,4 +1,9 @@
 /* Empty. Add your own CSS if you like */
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
 .angular-google-map-container { height: 400px; }
 
 button.ion-ios7-more {
@@ -17,6 +22,11 @@ button.ion-ios7-more {
 	border-bottom: 1px solid #ccc;
 }
 
+input, button, select, textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
 .button.button-positive {
 	background-color: #27b17e;
 	border-radius:30px;
@@ -26,6 +36,7 @@ button.ion-ios7-more {
 	-o-border-radius:30px;
 	border:none;
 	width: 60%;
+	min-width:250px;
 	margin:0 auto;
 	min-height: auto;
 	text-transform: uppercase;
@@ -41,12 +52,14 @@ button.ion-ios7-more {
 	-o-border-radius:30px;
 	border: 1px solid #fff;
 	width: 60%;
+	min-width:250px;
 	margin:0 auto;
 	min-height: auto;
 	text-transform: uppercase;
 	font-size: 13px;
 	color: #fff;
 	margin-top: 20px;
+	margin-bottom:40px;
 }
 
 .menu, .menu .item {
@@ -56,6 +69,61 @@ button.ion-ios7-more {
 }
 
 .sign-in-page {
-	background: url(../img/nok.png) center center no-repeat;
+	background: url(../img/intro.png) center center no-repeat;
 	background-size: cover;
+}
+
+.sign-in-list {
+	width:80%;
+	margin: 0 auto;
+	margin-left:10%;
+	position:absolute;
+	bottom:0;
+}
+
+.sign-in-page .logo {
+	margin:0 auto;
+	width:90%;
+	height:35%;
+	background: url(../img/logo.png) center center no-repeat;
+	background-size: contain;
+	margin-top:30px;
+}
+
+.sign-in-list .item {
+	position: relative;
+	background:none;
+	border:none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
+
+.sign-in-list .input-label {
+	color: #36faaa;
+	text-transform: uppercase;
+	font-weight: 600 !important;
+	font-size:14px;
+	width: auto;
+	
+}
+
+.sign-in-page a.signup-free {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sign-in-page .forgotpw {
+	color: rgba(255, 255, 255, 0.55);
+	font-size:30px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	z-index: 40;
+}
+.sign-in-page input[type="text"], .sign-in-page input[type="password"], .sign-in-page input[type="datetime"], .sign-in-page input[type="datetime-local"], .sign-in-page  input[type="date"], .sign-in-page input[type="month"], .sign-in-page input[type="time"], .sign-in-page input[type="week"], .sign-in-page  input[type="number"], .sign-in-page  input[type="email"], .sign-in-page input[type="url"], .sign-in-page  input[type="search"], .sign-in-page input[type="tel"], .sign-in-page input[type="color"] {
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 400;
 }
