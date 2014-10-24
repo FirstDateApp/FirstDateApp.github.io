@@ -198,3 +198,13 @@
 2014-10-24 09:04:11.725 m1[70362:1995326] Sign-In 
 2014-10-24 09:04:30.219 m1[70362:1995326] Sign-In 
 2014-10-24 09:05:11.225 m1[70362:1995326] Sign-In [object Object]
+2014-10-24 16:23:17.685 m1[74327:2183741] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Data/Application/88AFC925-80A8-42A4-B414-D1D587CCF458/Library/Cookies/Cookies.binarycookies
+2014-10-24 16:23:18.015 m1[74327:2183741] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-24 16:23:18.016 m1[74327:2183741] Multi-tasking -> Device: YES, App: YES
+2014-10-24 16:23:18.034 m1[74327:2183741] Unlimited access to network resources
+2014-10-24 16:23:18.255 m1[74327:2183741] [CDVTimer][keyboard] 0.067949ms
+2014-10-24 16:23:18.314 m1[74327:2183741] [CDVTimer][statusbar] 58.804035ms
+2014-10-24 16:23:18.315 m1[74327:2183741] [CDVTimer][TotalPluginStartup] 59.247017ms
+2014-10-24 16:23:18.494 m1[74327:2183741] Resetting plugins due to page load.
+2014-10-24 16:23:18.918 m1[74327:2183741] Finished load of: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Bundle/Application/CDF3B640-B0DC-414E-96E3-C082A9870D45/m1.app/www/index.html#/sign-in
+2014-10-24 16:23:32.795 m1[74327:2183741] Sign-In 

@@ -1,16 +1,18 @@
 <ion-view title="Sign-In" hide-nav-bar="true">
-     <ion-content class="sign-in-page">
-          <div class="list">
+     <ion-content scroll="false" class="sign-in-page">
+     	<div class="logo"></div>
+     	
+          <div class="list sign-in-list">
+	        
             <label class="item item-input">
-              <span class="input-label">Username</span>
+              <span class="input-label">email</span>
               <input type="text" ng-model="user.username">
             </label>
             <label class="item item-input">
-              <span class="input-label">Password</span>
+              <span class="input-label">Password<a href="#/forgot-password" class="forgotpw icon ion-ios7-help-outline"></a></span>
               <input type="password" ng-model="user.password">
             </label>
-          </div>
-          <div class="padding">
+            <div class="padding">
             <button class="button button-block button-positive" ng-click="signIn(user)">
               log in
             </button>
@@ -18,8 +20,13 @@
 	           <button class="button button-block button-hollow" ng-click="signIn(user)">
               LOG IN WITH FACEBOOK
             </button>
-              <a href="#/forgot-password">Forgot password</a>
+              <a class="signup-free" ng-click="signIn(user)">SIGN UP FOR FREE</a>
+              
+              <a href="#/forgot-password" class="icon ion-ios7-help-outline"></a>
             </p>
+            
           </div>
+          </div>
+          
         </ion-content>
       </ion-view>
