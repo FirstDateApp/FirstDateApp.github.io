@@ -14,7 +14,8 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('SignInCtrl', function($scope, $state) {
+.controller('SignInCtrl', function($rootScope,$scope, $state) {
+	$rootScope.toggledrag = false; 
   $scope.signIn = function(user) {
   	console.log('Sign-In', user);
     $state.go('tab.plan');
