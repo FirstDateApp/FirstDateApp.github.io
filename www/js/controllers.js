@@ -8,6 +8,10 @@ angular.module('starter.controllers', [])
     $ionicSideMenuDelegate.toggleLeft();
   };
   
+  $scope.toggleRight = function() {
+    $ionicSideMenuDelegate.toggleRight();
+  };
+  
 })
 
 .controller('SignInCtrl', function($scope, $state) {

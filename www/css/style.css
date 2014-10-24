@@ -1,2 +1,61 @@
 /* Empty. Add your own CSS if you like */
 .angular-google-map-container { height: 400px; }
+
+button.ion-ios7-more {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	left: 13px;
+}
+.bar.bar-positive, .bar.bar-positive .button, .bar.bar-positive .title {
+	color: #51bf9a;
+	background: #fff;
+}
+.bar.bar-positive {
+	border-bottom: 1px solid #ccc;
+}
+
+.button.button-positive {
+	background-color: #27b17e;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-ms-border-radius:30px;
+	-o-border-radius:30px;
+	border:none;
+	width: 60%;
+	margin:0 auto;
+	min-height: auto;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.button.button-hollow {
+	background-color: transparent;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-ms-border-radius:30px;
+	-o-border-radius:30px;
+	border: 1px solid #fff;
+	width: 60%;
+	margin:0 auto;
+	min-height: auto;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.menu, .menu .item {
+	background-color: #1c1c1c;
+	color: #fff;
+	border-color: #1c1c1c;
+}
+
+.sign-in-page {
+	background: url(../img/nok.png) center center no-repeat;
+	background-size: cover;
+}

@@ -40,9 +40,13 @@
     
     <ion-nav-bar class="bar-positive nav-title-slide-ios7">
       <button class="button button-icon ion-navicon" ng-click="toggleLeft()" ng-hide="$exposeAside.active"></button>
+      
       <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
       </ion-nav-back-button>
+      <ion-nav-buttons side="right">
+	  <button class="button button-icon ion-ios7-more" ng-click="toggleRight()" ng-hide="$exposeAside.active"></button>
+      </ion-nav-buttons>
     </ion-nav-bar>
     
     <!-- <ion-content class="padding"> -->
@@ -55,26 +59,45 @@
     <ion-nav-view animation="slide-left-right"></ion-nav-view>
     
      <!-- </ion-content> -->
-      </ion-side-menu-content>
+     </ion-side-menu-content>
     
-      <ion-side-menu expose-aside-when="large">
-        <ion-header-bar class="bar-royal">
-          <h1 class="title">Left Menu</h1>
-        </ion-header-bar>
+      <ion-side-menu expose-aside-when="large" width="120" side="left">
         <ion-content>
           <div class="list">
-            <div class="item">
-              A few
-            </div>
-            <div class="item">
-              of my
-            </div>
-            <div class="item">
-              favorite
-            </div>
-            <div class="item">
-              things
-            </div>
+            <a class="item" href="#/sign-out" ng-click="toggleLeft()">
+              My Face
+            </a>
+            <a class="item" href="#/tab/messages" ng-click="toggleLeft()">
+              TALK
+            </a>
+            <a class="item" href="#/tab/plan" ng-click="toggleLeft()">
+              PLAN
+            </a>
+            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+              PLAY
+            </a>
+            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+              SETTINGS
+            </a>
+            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+              MATCH
+            </a>
+          </div>
+        </ion-content>
+      </ion-side-menu>
+      
+      <ion-side-menu expose-aside-when="large" width="120" side="right">
+        <ion-content>
+          <div class="list">
+            <a class="item" href="#/tab/messages" ng-click="toggleRight()">
+              FACE1
+            </a>
+            <a class="item" href="#/tab/plan" ng-click="toggleRight()">
+              FACE2
+            </a>
+            <a class="item" href="#/tab/activities" ng-click="toggleRight()">
+              FACE3
+            </a>
           </div>
         </ion-content>
       </ion-side-menu>

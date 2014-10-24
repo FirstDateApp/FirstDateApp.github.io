@@ -15,8 +15,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if(window.StatusBar) {
+	  //StatusBar.statusBarOverlaysWebView(false);
+	  //]StatusBar.overlaysWebView(true);
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      //StatusBar.styleDefault();
+      //StatusBar.backgroundColorByHexString('#51bf9a');
+      //StatusBar.styleColor('black');
+	  //Statusbar.styleHex('#000');
+	  StatusBar.overlaysWebView(false);
+	  StatusBar.styleLightContent();
+	  StatusBar.backgroundColorByHexString("#51bf9a");
     }
   });
 })
@@ -41,7 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   	.state('signin', {
       url: '/sign-in',
       templateUrl: 'templates/sign-in.html',
-      controller: 'SignInCtrl'
+      controller: 'SignInCtrl',
     })
     .state('forgotpassword', {
       url: '/forgot-password',

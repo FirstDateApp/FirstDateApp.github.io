@@ -8,10 +8,10 @@ angular.module('starter.services', ['ngResource'])
 
   // Some fake testing data
   var activities = [
-    { id: 0, name: 'Icebreakers' },
-    { id: 1, name: 'Compatability' },
-    { id: 2, name: 'Trivia' },
-    { id: 3, name: 'Games' }
+    { id: 0, name: 'CONVO STARTERS' },
+    { id: 1, name: 'RANDOM TRIVIA' },
+    { id: 2, name: 'FUN + GAMES' },
+    { id: 3, name: 'MORE' }
   ];
 
   return {
