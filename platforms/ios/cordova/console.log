@@ -235,3 +235,21 @@
 2014-10-24 17:27:07.310 m1[80293:2213456] [CDVTimer][TotalPluginStartup] 17.048001ms
 2014-10-24 17:27:07.410 m1[80293:2213456] Resetting plugins due to page load.
 2014-10-24 17:27:07.744 m1[80293:2213456] Finished load of: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Bundle/Application/68F2F6FD-AD68-44FD-B743-B198781B4BF8/m1.app/www/index.html#/sign-in
+2014-10-24 17:32:38.070 m1[82372:2218417] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Data/Application/E9D42F21-1FEA-45C0-8516-37EF1F200AF5/Library/Cookies/Cookies.binarycookies
+2014-10-24 17:32:38.195 m1[82372:2218417] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-24 17:32:38.195 m1[82372:2218417] Multi-tasking -> Device: YES, App: YES
+2014-10-24 17:32:38.200 m1[82372:2218417] Unlimited access to network resources
+2014-10-24 17:32:38.360 m1[82372:2218417] [CDVTimer][keyboard] 0.060022ms
+2014-10-24 17:32:38.374 m1[82372:2218417] [CDVTimer][statusbar] 13.619006ms
+2014-10-24 17:32:38.374 m1[82372:2218417] [CDVTimer][TotalPluginStartup] 14.020026ms
+2014-10-24 17:32:38.438 m1[82372:2218417] Resetting plugins due to page load.
+2014-10-24 17:32:38.725 m1[82372:2218417] Finished load of: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Bundle/Application/3D8A96D6-9FE1-4052-BC9A-DE21B4D070A1/m1.app/www/index.html#/sign-in
+2014-10-24 17:33:44.121 m1[83625:2220503] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Data/Application/06E4CC86-69CB-4ADC-B872-EA6461FE2870/Library/Cookies/Cookies.binarycookies
+2014-10-24 17:33:44.246 m1[83625:2220503] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-24 17:33:44.246 m1[83625:2220503] Multi-tasking -> Device: YES, App: YES
+2014-10-24 17:33:44.251 m1[83625:2220503] Unlimited access to network resources
+2014-10-24 17:33:44.408 m1[83625:2220503] [CDVTimer][keyboard] 0.066996ms
+2014-10-24 17:33:44.422 m1[83625:2220503] [CDVTimer][statusbar] 14.248013ms
+2014-10-24 17:33:44.422 m1[83625:2220503] [CDVTimer][TotalPluginStartup] 14.665008ms
+2014-10-24 17:33:44.485 m1[83625:2220503] Resetting plugins due to page load.
+2014-10-24 17:33:44.867 m1[83625:2220503] Finished load of: file:///Users/rich.sollenne/Library/Developer/CoreSimulator/Devices/9E5D95C5-31BF-48E7-BD95-F0F5DDA88E5A/data/Containers/Bundle/Application/F2C5FE73-0709-4019-81C8-18DC09083955/m1.app/www/index.html#/sign-in
