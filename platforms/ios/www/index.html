@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>wheelie</title>
+    <title>WHEELIE</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Pompiere|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -30,6 +30,7 @@
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
     <script src="lib/ionic/js/angular/angular-resource.js"></script>
+    <script src="js/custom.js"></script>
 
   </head>
   <body ng-app="starter" animation="slide-left-right-ios7"  ng-controller="MainCtrl" class="platform-ios platform-cordova platform-webview">
@@ -38,7 +39,7 @@
     -->
     
     <ion-side-menus>
-      <ion-side-menu-content>
+      <ion-side-menu-content drag-content="toggledrag">
     
     <ion-nav-bar class="bar-positive nav-title-slide-ios7">
       <button class="button button-icon ion-navicon" ng-click="toggleLeft()" ng-hide="$exposeAside.active"></button>

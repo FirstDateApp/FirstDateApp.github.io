@@ -2,6 +2,8 @@
 html, body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
+	overflow: auto; 
+    -webkit-overflow-scrolling: touch;
 }
 
 .angular-google-map-container { height: 400px; }
@@ -84,7 +86,7 @@ input, button, select, textarea {
 .sign-in-page .logo {
 	margin:0 auto;
 	width:90%;
-	height:35%;
+	height:32%;
 	background: url(../img/logo.png) center center no-repeat;
 	background-size: contain;
 	margin-top:30px;
