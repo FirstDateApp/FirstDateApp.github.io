@@ -69,7 +69,7 @@ input, button, select, textarea {
 }
 
 .sign-in-page {
-	background: url(../img/intro.png) center center no-repeat;
+	background: url(../img/loginpage.png) center center no-repeat;
 	background-size: cover;
 }
 
