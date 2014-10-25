@@ -84,6 +84,10 @@ angular.module('starter.controllers', [])
   $scope.activity = Activities.get($stateParams.activityId);
 })
 
+
+
+
+
 .controller('AfterCtrl', function($scope) {
 })
 

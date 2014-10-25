@@ -134,10 +134,10 @@ input, button, select, textarea {
 	text-transform: uppercase;
 }
 .title i.ion-game-controller-a {
-	font-size: 30px;
+	font-size: 32px;
 	line-height: 0px;
 	position:relative;
-	top:5px;
+	top:7px;
 	margin-right:5px;
 }
 .play-page {
@@ -157,22 +157,22 @@ input, button, select, textarea {
 .play-items .list {
 	width:80%;
 	margin:0 auto;
-	margin-top:40px;
+	margin-top:30px;
 }
 
-.play-page a.play-category.play1, .play-page a.play-category.play3 {
+.play-page a.play-category.play-0, .play-page a.play-category.play-2 {
 	float:right;
 }
 
-.play-page .play2 {
+.play-page .play-1 {
 	margin-top:100px;
 }
 
-.play-page .play3 {
+.play-page .play-2 {
 	margin-top:-40px;
 }
 
-.play-page .play4 {
+.play-page .play-3 {
 	margin-top:60px;
 }
 

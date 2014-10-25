@@ -4,12 +4,10 @@ angular.module('starter.services', ['ngResource'])
  * A simple example service that returns some data.
  */
 .factory('Activities', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
   var activities = [
     { id: 0, name: 'CONVO STARTERS' },
-    { id: 1, name: 'RANDOM TRIVIA' },
+    { id: 1, name: 'TRIVIA' },
     { id: 2, name: 'FUN + GAMES' },
     { id: 3, name: 'MORE' }
   ];
@@ -26,9 +24,7 @@ angular.module('starter.services', ['ngResource'])
 })
 
 .factory('Messages', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
   var messages = [
     { id: 0, name: 'message1' },
     { id: 1, name: 'message2' },
