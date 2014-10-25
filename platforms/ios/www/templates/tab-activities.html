@@ -1,9 +1,15 @@
-<ion-view title="Activities">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="activity in activities" type="item-text-wrap" href="#/tab/activity/{{activity.id}}">
+<ion-view title="<i class='icon ion-game-controller-a'></i>Play">
+  <ion-content  scroll="false"  class="play-page">
+    <ion-list class="play-items">
+      <!--
+<ion-item ng-repeat="activity in activities" type="item-text-wrap" href="#/tab/activity/{{activity.id}}">
         {{activity.name}}
       </ion-item>
+-->
+		<a href="#" class="play-category play1">CONVO STARTERS</a>
+		<a href="#" class="play-category play2">TRIVIA</a>
+		<a href="#" class="play-category play3">FUN + GAMES</a>
+		<a href="#" class="play-category play4">MORE</a>
     </ion-list>
   </ion-content>
 </ion-view>

@@ -4,7 +4,7 @@ html, body {
 	font-weight: 600;
 }
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container { height: 200px; }
 
 button.ion-ios7-more {
 	-webkit-transform: rotate(90deg);
@@ -121,9 +121,58 @@ input, button, select, textarea {
 	position: absolute;
 	z-index: 40;
 }
+
 .sign-in-page input[type="text"], .sign-in-page input[type="password"], .sign-in-page input[type="datetime"], .sign-in-page input[type="datetime-local"], .sign-in-page  input[type="date"], .sign-in-page input[type="month"], .sign-in-page input[type="time"], .sign-in-page input[type="week"], .sign-in-page  input[type="number"], .sign-in-page  input[type="email"], .sign-in-page input[type="url"], .sign-in-page  input[type="search"], .sign-in-page input[type="tel"], .sign-in-page input[type="color"] {
 	color: #fff;
 	letter-spacing: 1px;
 	font-size: 20px;
 	font-weight: 400;
 }
+
+/* play page */
+.title {
+	text-transform: uppercase;
+}
+.title i.ion-game-controller-a {
+	font-size: 30px;
+	line-height: 0px;
+	position:relative;
+	top:5px;
+	margin-right:5px;
+}
+.play-page {
+	background: url(../img/playbg.png) center center no-repeat;
+	background-size: cover;
+}
+
+.play-page a.play-category {
+	height:140px;
+	width:140px;
+	border-radius: 50%;
+	display:block;
+	text-indent: -9999px;
+	border: 1px rgba(0, 0, 0, 0.30) solid;
+}
+
+.play-items .list {
+	width:80%;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+.play-page a.play-category.play1, .play-page a.play-category.play3 {
+	float:right;
+}
+
+.play-page .play2 {
+	margin-top:100px;
+}
+
+.play-page .play3 {
+	margin-top:-40px;
+}
+
+.play-page .play4 {
+	margin-top:60px;
+}
+
