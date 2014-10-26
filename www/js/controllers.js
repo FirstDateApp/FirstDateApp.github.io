@@ -76,12 +76,43 @@ angular.module('starter.controllers', [])
 	
 }])
 
+
+
 .controller('ActivitiesCtrl', function($scope, Activities) {
   $scope.activities = Activities.all();
 })
 
 .controller('ActivityDetailCtrl', function($scope, $stateParams, Activities) {
   $scope.activity = Activities.get($stateParams.activityId);
+})
+
+
+
+.controller('TriviasCtrl', function($scope, Trivias) {
+  $scope.trivias = Trivias.all();
+})
+
+.controller('TriviaDetailCtrl', function($scope, $stateParams) {
+  $scope.trivia = $stateParams.name;
+  console.log($scope.trivia);
+;})
+
+.controller('FungamesCtrl', function($scope, Fungames) {
+  $scope.fungames = Fungames.all();
+})
+
+.controller('FungameDetailCtrl', function($scope, $stateParams) {
+  $scope.trivia = $stateParams.name;
+  console.log($scope.trivia);
+})
+
+.controller('FungamesCtrl', function($scope, Fungames) {
+  $scope.fungames = Fungames.all();
+})
+
+.controller('FungameDetailCtrl', function($scope, $stateParams) {
+  $scope.fungame = $stateParams.name;
+  console.log($scope.fungame);
 })
 
 

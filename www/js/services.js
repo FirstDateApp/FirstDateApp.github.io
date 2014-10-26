@@ -1,8 +1,6 @@
 angular.module('starter.services', ['ngResource'])
 
-/**
- * A simple example service that returns some data.
- */
+// play (activities)
 .factory('Activities', function() {
 
   var activities = [
@@ -19,6 +17,77 @@ angular.module('starter.services', ['ngResource'])
     get: function(activityId) {
       // Simple index lookup
       return activities[activityId];
+    }
+  }
+})
+
+// trivia 
+.factory('Trivias', function() {
+
+  var trivias = [
+    { id: 0, name: 'SPORTS' },
+    { id: 1, name: 'CATS' },
+    { id: 3, name: 'FILM AND TV' },
+    { id: 4, name: 'TRAVEL' },
+    { id: 5, name: 'TECH' },
+    { id: 6, name: 'MUSIC' },
+    { id: 7, name: 'SEX' },
+    { id: 8, name: 'CELEBRITIES' },
+    { id: 9, name: 'ANIMALS' }
+  ];
+
+  return {
+    all: function() {
+      return trivias;
+    },
+    get: function(triviaId) {
+      // Simple index lookup
+      return trivias[triviaId];
+    }
+  }
+})
+
+// fun and games
+.factory('Fungames', function() {
+
+  var fungames = [
+    { id: 0, name: 'LIGHTNING ROUND' },
+    { id: 1, name: 'HAVE YOU EVER' },
+    { id: 2, name: '2 TRUTHS 1 LIE' },
+    { id: 3, name: 'PAPER AIRPLANE' },
+    { id: 4, name: 'STARING CONTEST' },
+    { id: 5, name: 'NAME THAT TUNE' },
+    { id: 6, name: 'CHECKERS' },
+    { id: 7, name: 'M.A.S.H' },
+    { id: 8, name: 'CHARADES' }
+  ];
+
+  return {
+    all: function() {
+      return fungames;
+    },
+    get: function(fungameId) {
+      // Simple index lookup
+      return fungames[fungameId];
+    }
+  }
+})
+
+.factory('Payfungames', function() {
+
+  var payfungames = [
+    { id: 0, name: 'LIGHTNING ROUND' },
+    { id: 1, name: 'HAVE YOU EVER' },
+    { id: 2, name: '2 TRUTHS 1 LIE' }  
+  ];
+
+  return {
+    all: function() {
+      return payfungames;
+    },
+    get: function(payfungameId) {
+      // Simple index lookup
+      return payfungames[payfungameId];
     }
   }
 })
@@ -51,4 +120,5 @@ angular.module('starter.services', ['ngResource'])
 			}
 	});		
 })
+
 

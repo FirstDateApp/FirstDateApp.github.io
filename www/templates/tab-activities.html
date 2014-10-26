@@ -2,9 +2,8 @@
   <ion-content  scroll="false"  class="play-page">
     <ion-list class="play-items">
       
-<a class="play-category play-{{activity.id}}" ng-repeat="activity in activities" type="item-text-wrap" href="#/tab/activity/{{activity.id}}">
-        {{activity.name}}
-      </a>
+<a class="play-category play-{{activity.id}}" ng-repeat="activity in activities" type="item-text-wrap" href="#/tab/play{{activity.id}}">{{activity.name}}</a>
+
     </ion-list>
   </ion-content>
 </ion-view>

@@ -150,8 +150,13 @@ input, button, select, textarea {
 	width:140px;
 	border-radius: 50%;
 	display:block;
-	text-indent: -9999px;
+	/* text-indent: -9999px; WILL RE-APPLY WHEN ASSETS ARE IN */
 	border: 1px rgba(0, 0, 0, 0.30) solid;
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	color:#68c29c;
+	line-height: 140px;
 }
 
 .play-items .list {
@@ -175,4 +180,104 @@ input, button, select, textarea {
 .play-page .play-3 {
 	margin-top:60px;
 }
+
+.trivia-page .trivia-categories, .fungames-page .fungames-categories {
+	width:100%;
+	text-align: center;
+}
+
+.trivia-page .trivia-categories a, .fungames-page .fungames-categories a, .fungames-page .fame-games a {
+	display:inline-block;
+	text-decoration: none;
+	width:31%;
+	text-align:center;
+	font-size:11px;
+	color:#68c29c;
+	margin-top: 40px;
+}
+
+.fungames-page .fungames-categories a {
+	margin-top: 10px;
+}
+
+.fungames-page .fame-games a {
+	margin-top: 0px;
+}
+
+.trivia-page .trivia-categories a .trivia-icon, .fungames-page .fungames-categories a .fungame-icon {
+	margin:0 auto;
+	width:75px;
+	height:75px;
+	display: block;
+	border: 1px rgba(0, 0, 0, 0.30) solid;
+	border-radius: 50%;
+}
+
+.fungame-name {
+	display: inline-block;
+	width: 70px;
+}
+
+.fame-games {
+	width:100%;
+	margin-top: 20px;
+}
+
+.fame-games .fame-game-title-bar {
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	width: 100%;
+}
+
+.fame-games .fame-game-title-bar h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	display: inline-block;
+	color: #333;
+}
+
+.fame-games .fame-game-title-bar .fame-game-price {
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

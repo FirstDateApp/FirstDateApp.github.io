@@ -85,16 +85,85 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
-    .state('tab.activity-detail', {
-      url: '/activity/:activityId',
+    
+    
+    
+    // play area
+    .state('tab.play-convos', {
+      url: '/play0',
       views: {
         'tab-activities': {
-          templateUrl: 'templates/activity-detail.html',
-          controller: 'ActivityDetailCtrl'
+          templateUrl: 'templates/play-convos.html',
+          //controller: 'ActivityDetailCtrl'
         }
       }
     })
-
+    
+    //.state('tab.play-trivia', {
+    //  url: '/activity/1',
+    //  views: {
+    //    'tab-activities': {
+    //      templateUrl: 'templates/play-trivia.html',
+    //      //controller: 'ActivityDetailCtrl'
+    //    }
+    //  }
+    //})
+    
+	    .state('tab.play-trivia', {
+	      url: '/play1',
+	      views: {
+	        'tab-activities': {
+	          templateUrl: 'templates/play-trivia.html',
+	          controller: 'TriviasCtrl'
+	        }
+	      }
+	    })
+    
+    .state('tab.play-trivia-question', {
+      url: '/trivia/:id?name',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-trivia-question.html',
+          controller: 'TriviaDetailCtrl'
+        }
+      }
+    })
+    
+    .state('tab.play-fungames', {
+      url: '/play2',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-fungames.html',
+          controller: 'FungamesCtrl',
+          //controller: 'PayFungamesCtrl'
+        }
+      }
+    })
+    
+    .state('tab.play-fungames-fungame', {
+      url: '/fungames/:id?name',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-fungames-fungame.html',
+          controller: 'FungameDetailCtrl',
+        }
+      }
+    })
+    
+    
+    .state('tab.play-more', {
+      url: '/play3',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-more.html',
+          //controller: 'ActivityDetailCtrl'
+        }
+      }
+    })
+	//////////////////////////////////
+	
+	
+	
     .state('tab.after', {
       url: '/after',
       views: {
