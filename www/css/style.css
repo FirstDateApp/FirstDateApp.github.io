@@ -133,7 +133,7 @@ input, button, select, textarea {
 .title {
 	text-transform: uppercase;
 }
-.title i.ion-game-controller-a {
+.title i.ion-game-controller-b {
 	font-size: 32px;
 	line-height: 0px;
 	position:relative;
@@ -244,7 +244,46 @@ input, button, select, textarea {
 	margin-left: 4px;
 }
 
+.left-menu {
+	text-align: center;	
+	padding-top: 15px;
+}
 
+.left-menu .item {
+	border:1px solid #333;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	background: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	
+}
+
+.left-menu .item.active {
+	color: #333;
+	background: #6dfccc;
+}
+
+.left-menu a {
+	width: 100%;
+	display: block;
+}
+
+.left-menu a i {
+	font-size: 30px;
+}
+
+.left-menu .left-menu0 {
+	margin:0 auto;
+	height: 60px;
+	width: 60px;
+	background: url(../img/Menu-picture.png) center center no-repeat;
+	background-size: contain;
+	border:none;
+	margin-bottom: 15px;
+}
 
 
 

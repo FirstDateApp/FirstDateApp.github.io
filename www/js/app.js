@@ -56,6 +56,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       templateUrl: 'templates/forgot-password.html'
     })
     
+    //.state('settings', {
+    //  url: '/settings',
+    //  templateUrl: 'templates/settings.html'
+    //})
+    
+    //.state('match', {
+    //  url: '/match',
+    //  templateUrl: 'templates/match.html'
+    //})
+    
     
     // setup an abstract state for the tabs directive
     .state('tab', {
@@ -72,6 +82,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         'tab-plan': {
           templateUrl: 'templates/tab-plan.html',
           controller: 'PlanCtrl'
+        }
+      }
+    })
+    
+    .state('tab.settings', {
+      url: '/settings',
+      views: {
+        'tab-settings': {
+          templateUrl: 'templates/settings.html',
+          //controller: 'PlanCtrl'
+        }
+      }
+    })
+    
+    .state('tab.match', {
+      url: '/match',
+      views: {
+        'tab-match': {
+          templateUrl: 'templates/match.html',
+          //controller: 'PlanCtrl'
         }
       }
     })
@@ -98,16 +128,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
-    
-    //.state('tab.play-trivia', {
-    //  url: '/activity/1',
-    //  views: {
-    //    'tab-activities': {
-    //      templateUrl: 'templates/play-trivia.html',
-    //      //controller: 'ActivityDetailCtrl'
-    //    }
-    //  }
-    //})
     
 	    .state('tab.play-trivia', {
 	      url: '/play1',
@@ -173,6 +193,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+    
+   
     
     .state('tab.messages', {
       url: '/messages',
