@@ -51,12 +51,12 @@ angular.module('starter.services', ['ngResource'])
 .factory('Fungames', function() {
 
   var fungames = [
-    { id: 0, name: 'LIGHTNING ROUND' },
-    { id: 1, name: 'HAVE YOU EVER' },
-    { id: 2, name: '2 TRUTHS 1 LIE' },
-    { id: 3, name: 'PAPER AIRPLANE' },
-    { id: 4, name: 'STARING CONTEST' },
-    { id: 5, name: 'NAME THAT TUNE' },
+    { id: 0, name: 'LIGHTNING' },
+    { id: 1, name: 'HAVE YOU' },
+    { id: 2, name: '2 TRUTHS' },
+    { id: 3, name: 'AIRPLANE' },
+    { id: 4, name: 'STARING' },
+    { id: 5, name: 'TUNE' },
     { id: 6, name: 'CHECKERS' },
     { id: 7, name: 'M.A.S.H' },
     { id: 8, name: 'CHARADES' }
@@ -69,25 +69,6 @@ angular.module('starter.services', ['ngResource'])
     get: function(fungameId) {
       // Simple index lookup
       return fungames[fungameId];
-    }
-  }
-})
-
-.factory('Payfungames', function() {
-
-  var payfungames = [
-    { id: 0, name: 'LIGHTNING ROUND' },
-    { id: 1, name: 'HAVE YOU EVER' },
-    { id: 2, name: '2 TRUTHS 1 LIE' }  
-  ];
-
-  return {
-    all: function() {
-      return payfungames;
-    },
-    get: function(payfungameId) {
-      // Simple index lookup
-      return payfungames[payfungameId];
     }
   }
 })

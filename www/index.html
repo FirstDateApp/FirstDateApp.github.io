@@ -78,7 +78,7 @@
 	            <i class="icon ion-compose"></i><br>
               PLAN
             </a>
-            <a class="item" ui-sref-active="active" ui-sref="tab.activities" ng-click="toggleLeft()">
+            <a class="item" ng-class="{active:$state.includes('tab.play-trivia')}" ui-sref-active="active" ui-sref="tab.activities" ng-click="toggleLeft()">
 	            <i class="icon ion-game-controller-b"></i><br>
               PLAY
             </a>
