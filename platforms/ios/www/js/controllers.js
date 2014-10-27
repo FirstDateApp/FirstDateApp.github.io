@@ -90,11 +90,11 @@ angular.module('starter.controllers', [])
 
 .controller('TriviasCtrl', function($scope, Trivias) {
   $scope.trivias = Trivias.all();
+  $scope.playActive = true;
 })
 
 .controller('TriviaDetailCtrl', function($scope, $stateParams) {
   $scope.trivia = $stateParams.name;
-  console.log($scope.trivia);
 ;})
 
 .controller('FungamesCtrl', function($scope, Fungames) {
