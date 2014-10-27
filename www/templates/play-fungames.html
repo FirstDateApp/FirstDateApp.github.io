@@ -2,7 +2,7 @@
     <ion-content  scroll="false"  class="fungames-page padding">
     
 			<ion-list class="fungames-categories">
-				<a class="fungames-category fungames-{{fungames.id}}" ng-repeat="fungame in fungames" type="item-text-wrap" href="#/tab/fungames/{{fungame.id}}?name={{fungame.name}}"><span class="fungame-icon"></span><span class="fungame-name">{{fungame.name}}</span></a>
+				<a class="fungames-category fungame{{fungame.id}}" ng-repeat="fungame in fungames" type="item-text-wrap" href="#/tab/fungames/{{fungame.id}}?name={{fungame.name}}"><span class="fungame-icon"></span><span class="fungame-name">{{fungame.name}}</span></a>
 			</ion-list>
 			
 			<div class="fame-games">
