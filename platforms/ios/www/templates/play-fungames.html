@@ -1,0 +1,20 @@
+<ion-view title="<i class='icon ion-game-controller-b'></i>fun + games">
+    <ion-content  scroll="false"  class="fungames-page padding">
+    
+			<ion-list class="fungames-categories">
+				<a class="fungames-category fungames-{{fungames.id}}" ng-repeat="fungame in fungames" type="item-text-wrap" href="#/tab/fungames/{{fungame.id}}?name={{fungame.name}}"><span class="fungame-icon"></span><span class="fungame-name">{{fungame.name}}</span></a>
+			</ion-list>
+			
+			<div class="fame-games">
+				<span class="fame-game-title-bar"><h2>FAMOUS GAMES</h2><span class="fame-game-price">($.99/EACH)</span></span>	
+			</div>
+			
+			<ion-list class="fungames-categories">
+				<a class="fungames-category fungames-uno"        type="item-text-wrap" href="#/tab/fungames/0?name=UNO">        <span class="fungame-icon"></span><span class="fungame-name">UNO</span></a>
+				<a class="fungames-category fungames-pictionary" type="item-text-wrap" href="#/tab/fungames/1?name=PICTIONARY"> <span class="fungame-icon"></span><span class="fungame-name">PICTIONARY</span></a>
+				<a class="fungames-category fungames-scrabble"   type="item-text-wrap" href="#/tab/fungames/2?name=SCRABBLE">   <span class="fungame-icon"></span><span class="fungame-name">SCRABBLE</span></a>
+			</ion-list>
+    </ion-content>
+</ion-view>
+      
+      

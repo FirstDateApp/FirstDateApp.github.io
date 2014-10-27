@@ -67,23 +67,27 @@
     
       <ion-side-menu expose-aside-when="large" width="120" side="left">
         <ion-content>
-          <div class="list">
-            <a class="item" href="#/sign-out" ng-click="toggleLeft()">
-              My Face
-            </a>
-            <a class="item" href="#/tab/messages" ng-click="toggleLeft()">
+          <div class="list left-menu">
+            <a class="item left-menu0" ng-click="toggleLeft()"></a>
+            
+            <a class="item" ui-sref-active="active" ui-sref="tab.messages" ng-click="toggleLeft()">
+	            <i class="icon ion-ios7-chatboxes"></i><br>
               TALK
             </a>
-            <a class="item" href="#/tab/plan" ng-click="toggleLeft()">
+            <a class="item" ui-sref-active="active" ui-sref="tab.plan" ng-click="toggleLeft()">
+	            <i class="icon ion-compose"></i><br>
               PLAN
             </a>
-            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+            <a class="item" ng-class="{active:$state.includes('tab.play-trivia')}" ui-sref-active="active" ui-sref="tab.activities" ng-click="toggleLeft()">
+	            <i class="icon ion-game-controller-b"></i><br>
               PLAY
             </a>
-            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+            <a class="item" ui-sref-active="active" ui-sref="tab.settings" ng-click="toggleLeft()">
+	            <i class="icon ion-gear-a"></i><br>
               SETTINGS
             </a>
-            <a class="item" href="#/tab/activities" ng-click="toggleLeft()">
+            <a class="item" ui-sref-active="active" ui-sref="tab.match" ng-click="toggleLeft()">
+	            <i class="icon ion-ios7-heart"></i><br>
               MATCH
             </a>
           </div>

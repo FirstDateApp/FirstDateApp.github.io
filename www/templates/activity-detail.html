@@ -1,19 +1,7 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view title="<i class='icon ion-game-controller-a'></i>{{activity.name}}">
   <ion-content has-header="true" padding="true">
-  
-  <div class="play-sub play-{{activity.id}}" ng-repeat="activity in activities" type="item-text-wrap" href="#/tab/activity/{{activity.id}}">
-        {{activity.name}}
-      </a>
-  
-  
-  
-  
-  
+  	{{activity.name}}
   </ion-content>
 </ion-view>
+
+

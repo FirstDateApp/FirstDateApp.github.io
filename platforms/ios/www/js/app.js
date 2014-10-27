@@ -56,6 +56,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       templateUrl: 'templates/forgot-password.html'
     })
     
+    //.state('settings', {
+    //  url: '/settings',
+    //  templateUrl: 'templates/settings.html'
+    //})
+    
+    //.state('match', {
+    //  url: '/match',
+    //  templateUrl: 'templates/match.html'
+    //})
+    
     
     // setup an abstract state for the tabs directive
     .state('tab', {
@@ -75,6 +85,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+    
+    .state('tab.settings', {
+      url: '/settings',
+      views: {
+        'tab-settings': {
+          templateUrl: 'templates/settings.html',
+          //controller: 'PlanCtrl'
+        }
+      }
+    })
+    
+    .state('tab.match', {
+      url: '/match',
+      views: {
+        'tab-match': {
+          templateUrl: 'templates/match.html',
+          //controller: 'PlanCtrl'
+        }
+      }
+    })
 
     .state('tab.activities', {
       url: '/activities',
@@ -85,16 +115,75 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
-    .state('tab.activity-detail', {
-      url: '/activity/:activityId',
+    
+    
+    
+    // play area
+    .state('tab.play-convos', {
+      url: '/play0',
       views: {
         'tab-activities': {
-          templateUrl: 'templates/activity-detail.html',
-          controller: 'ActivityDetailCtrl'
+          templateUrl: 'templates/play-convos.html',
+          //controller: 'ActivityDetailCtrl'
         }
       }
     })
-
+    
+	    .state('tab.play-trivia', {
+	      url: '/play1',
+	      views: {
+	        'tab-activities': {
+	          templateUrl: 'templates/play-trivia.html',
+	          controller: 'TriviasCtrl'
+	        }
+	      }
+	    })
+    
+    .state('tab.play-trivia-question', {
+      url: '/trivia/:id?name',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-trivia-question.html',
+          controller: 'TriviaDetailCtrl'
+        }
+      }
+    })
+    
+    .state('tab.play-fungames', {
+      url: '/play2',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-fungames.html',
+          controller: 'FungamesCtrl',
+          //controller: 'PayFungamesCtrl'
+        }
+      }
+    })
+    
+    .state('tab.play-fungames-fungame', {
+      url: '/fungames/:id?name',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-fungames-fungame.html',
+          controller: 'FungameDetailCtrl',
+        }
+      }
+    })
+    
+    
+    .state('tab.play-more', {
+      url: '/play3',
+      views: {
+        'tab-activities': {
+          templateUrl: 'templates/play-more.html',
+          //controller: 'ActivityDetailCtrl'
+        }
+      }
+    })
+	//////////////////////////////////
+	
+	
+	
     .state('tab.after', {
       url: '/after',
       views: {
@@ -104,6 +193,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+    
+   
     
     .state('tab.messages', {
       url: '/messages',
@@ -128,5 +219,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/sign-in');
 
-});
+}).run(function($rootScope, $state) {
+      $rootScope.$state = $state; })
 
