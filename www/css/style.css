@@ -44,7 +44,7 @@ input, button, select, textarea {
 }
 
 .button.button-hollow {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-radius:30px;
 	-webkit-border-radius:30px;
 	-moz-border-radius:30px;
@@ -57,7 +57,7 @@ input, button, select, textarea {
 	min-height: auto;
 	text-transform: uppercase;
 	font-size: 13px;
-	color: #fff;
+	color: #fff !important;
 	margin-top: 20px;
 	margin-bottom:40px;
 }
@@ -122,7 +122,7 @@ input, button, select, textarea {
 	z-index: 40;
 }
 
-.sign-in-page input[type="text"], .sign-in-page input[type="password"], .sign-in-page input[type="datetime"], .sign-in-page input[type="datetime-local"], .sign-in-page  input[type="date"], .sign-in-page input[type="month"], .sign-in-page input[type="time"], .sign-in-page input[type="week"], .sign-in-page  input[type="number"], .sign-in-page  input[type="email"], .sign-in-page input[type="url"], .sign-in-page  input[type="search"], .sign-in-page input[type="tel"], .sign-in-page input[type="color"] {
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"],  input[type="date"], input[type="month"],  input[type="time"],  input[type="week"],  input[type="number"], input[type="email"],  input[type="url"],   input[type="search"],  input[type="tel"], input[type="color"] {
 	color: #fff;
 	letter-spacing: 1px;
 	font-size: 20px;
@@ -303,7 +303,7 @@ input, button, select, textarea {
 }
 .trivia-bottom-bar .trivia-action {
 	display: inline-block;	
-	width: 55px;	
+	width: 60px;	
 	position: relative;
 	top:-11px;	
 }
@@ -315,6 +315,69 @@ input, button, select, textarea {
 	font-size: 50px;
 	display: inline;
 }
+
+.match-page, .settings-page {
+	background: #51bf99;
+}
+
+.extended-logo {
+	background: #fff;
+	height: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+.extended-logo h1 {
+	margin: 0 auto;
+	padding:0;
+	width: 80%;
+	height: 100%;
+	background: url(../img/extwheeliebymatch.png) center center no-repeat;
+	background-size: cover;
+}
+
+.match-page .item, .settings-page .item {
+	background:transparent;
+	padding: 0;
+	width: 90%;
+	border:none;
+	margin:0 auto;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 20px;
+}
+
+.match-page .input-label, .settings-page .input-label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: auto;
+}
+
+.match-page button, .settings-page button {
+	color: #000 !important;
+	background: #fff !important;
+	margin-top:30px !important;
+}
+
+.match-page .item.item-toggle, .settings-page .item.item-toggle {
+	border: none;
+	width: 75%;
+	padding-top: 15px;
+	margin-top: 20px;
+	overflow: visible;
+}
+.settings-page button.button-hollow {
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+}
+
+.track {
+	background-color: #000 !important;
+	border-color: #000 !important;
+}
+
 
 /*%%%%%%%%%%%%%%%%%%%% ALL SPRITE ICONS ONLY %%%%%%%%%%%%%%%%%%%%*/
 /* MAIN PLAY PAGE */
