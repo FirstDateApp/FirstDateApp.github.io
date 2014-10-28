@@ -301,7 +301,37 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 }
 
 .pane[title="FILM AND TV"] {
-	background: url(../img/bgcelebs.png) center 30px no-repeat;
+	background: url(../img/bgfilm.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="TRAVEL"] {
+	background: url(../img/bgtravel.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="TECH"] {
+	background: url(../img/bgtech.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="MUSIC"] {
+	background: url(../img/bgmusic.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="SEX"] {
+	background: url(../img/bgsex.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="CELEBRITIES"] {
+	background: url(../img/bgcelebrs.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="ANIMALS"] {
+	background: url(../img/bganimals.png) center 30px no-repeat;
 	background-size: cover;
 }
 
