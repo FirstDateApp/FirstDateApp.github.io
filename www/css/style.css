@@ -291,7 +291,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 */
 
 .pane[title="SPORTS"] {
-	background: url(../bgsports.png) center 30px no-repeat;
+	background: url(../img/bgsports.png) center 30px no-repeat;
 	background-size: cover;
 }
 
