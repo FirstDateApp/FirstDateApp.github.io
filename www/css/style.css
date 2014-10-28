@@ -291,17 +291,17 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 */
 
 .pane[title="SPORTS"] {
-	background: url(../img/_0001_SPORTS2.png) center 30px no-repeat;
+	background: url(../bgsports.png) center 30px no-repeat;
 	background-size: cover;
 }
 
 .pane[title="CATS"] {
-	background: url(../img/_0004_CATS2.png) center 30px no-repeat;
+	background: url(../img/bgcats.png) center 30px no-repeat;
 	background-size: cover;
 }
 
 .pane[title="FILM AND TV"] {
-	background: url(../img/_0008_CELEB3.png) center 30px no-repeat;
+	background: url(../img/bgcelebs.png) center 30px no-repeat;
 	background-size: cover;
 }
 
