@@ -1,8 +1,10 @@
-<ion-view title="Settings">
+<ion-view title="Edit your account">
         <ion-content scroll="false"  class="settings-page">
+        
+		</div>
          <div class="extended-logo"><h1></h1></div>
          <div class="list reg-list">
-	        <button class="button button-block button-hollow" ui.sref="tab.messages">
+	        <button class="button button-block button-hollow" ui-sref="tab.messages">
               link facebook account
             </button>
             <label class="item item-input">
@@ -24,7 +26,7 @@
             <span>
             <ion-toggle ng-model="newsletters" toggle-class="toggle-calm">RECIEVE NEWSLETTERS</ion-toggle>
             <div class="padding">
-            <button class="button button-block button-positive" ng-click="signIn(user)">
+            <button class="button button-block button-positive" ui-sref="tab.messages">
               update now
             </button>
         </ion-content>

@@ -319,6 +319,31 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 .match-page, .settings-page {
 	background: #51bf99;
 }
+.signup-page  {
+	padding-top: 40px;
+}
+
+.password-page .bar {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:40px;
+}
+.match-page .bar, .settings-page .bar {
+	border-bottom: 1px solid #ccc;
+}
+
+.match-page .bar i.ion-arrow-left-c, .password-page .bar i.ion-arrow-left-c {
+	float: left;
+	font-size: 25px;
+}
+
+.password-text {
+	padding:10px;
+	padding-top:60px;
+}
+.match-page .bar i.ion-close-round, .settings-page .bar i.ion-close-round {
+	float: right;
+	font-size: 18px;
+}
 
 .extended-logo {
 	background: #fff;
@@ -376,6 +401,18 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 .track {
 	background-color: #000 !important;
 	border-color: #000 !important;
+}
+
+.questionbar {
+	font-family: 'Pompiere', cursive;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	background: #f4f4f4;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 18px;
+	color:#666;
+	
 }
 
 
