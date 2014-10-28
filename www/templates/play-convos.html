@@ -1,5 +1,10 @@
 <ion-view title="<i class='icon ion-game-controller-b'></i> convo starters">
         <ion-content>
           <div class="questionbar">How deep should your questions be?</div>
+		    
+		 <div class="range range-positive">
+    <input type="range" name="questions" min="10" max="100" value="50" step="1" onchange="rangevalue.value=value">
+  </div>   
+		 <output id="rangevalue"></output>
         </ion-content>
       </ion-view>

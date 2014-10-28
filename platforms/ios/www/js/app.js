@@ -51,21 +51,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       templateUrl: 'templates/sign-in.html',
       controller: 'SignInCtrl',
     })
+    
     .state('forgotpassword', {
       url: '/forgot-password',
       templateUrl: 'templates/forgot-password.html'
     })
     
-    //.state('settings', {
-    //  url: '/settings',
-    //  templateUrl: 'templates/settings.html'
-    //})
-    
-    //.state('match', {
-    //  url: '/match',
-    //  templateUrl: 'templates/match.html'
-    //})
-    
+	.state('signup', {
+      url: '/signup',
+      templateUrl: 'templates/signup.html'
+    })
     
     // setup an abstract state for the tabs directive
     .state('tab', {
@@ -105,6 +100,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+    
+    
 
     .state('tab.activities', {
       url: '/activities',

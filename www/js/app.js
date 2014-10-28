@@ -101,15 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
     
-    .state('matchfromsignin', {
-      url: '/match0',
-      views: {
-        'tab-matchfromsignin': {
-          templateUrl: 'templates/matchfromsignin.html',
-          //controller: 'PlanCtrl'
-        }
-      }
-    })
+    
 
     .state('tab.activities', {
       url: '/activities',

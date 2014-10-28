@@ -283,12 +283,40 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	margin-bottom: 15px;
 }
 
+/*
 .pane[title="SPORTS"] {
 	background: url(../img/trivia-sports.png) center 30px no-repeat;
 	background-size: cover;
 }
+*/
+
+.pane[title="SPORTS"] {
+	background: url(../img/_0001_SPORTS2.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="CATS"] {
+	background: url(../img/_0004_CATS2.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.pane[title="FILM AND TV"] {
+	background: url(../img/_0008_CELEB3.png) center 30px no-repeat;
+	background-size: cover;
+}
+
+.fungame-page.pane {
+	background: url(../img/GameGeneric_01.jpg) center 30px no-repeat;
+	background-size: cover;
+}
+
+.more-page.pane {
+	background: url(../img/Play_More.jpg) center 30px no-repeat;
+	background-size: cover;
+}
 
 .trivia-bottom-bar {
+	display: none;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -412,9 +440,56 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	border-bottom: 1px solid #e5e5e5;
 	font-size: 18px;
 	color:#666;
-	
 }
 
+/*
+input.vertical { -webkit-appearance: slider-vertical; writing-mode: bt-lr; }
+
+input[type=range], ::-moz-range-track, ::-ms-track {
+-webkit-appearance: none;
+width: 100% !important;
+overflow: visible !important;
+}
+
+::-webkit-slider-thumb, ::-moz-range-thumb, ::-ms-thumb {
+-webkit-appearance: none;
+background-color: red;
+height: 90px;
+}
+
+input[type='range'] {
+		-webkit-appearance: none;
+		height: 30px;
+		vertical-align: middle;
+	}
+	input[type='range']::-moz-range-track {
+		-moz-appearance: none;
+		border-radius: 5px;
+		background-color: #999;
+		height: 10px;
+	}
+	input[type='range']::-webkit-slider-thumb {
+		-webkit-appearance: none !important;
+		border-radius: 20px;
+		background-color: #FFF;
+		height: 20px;
+		width: 20px;
+	}
+	input[type='range']::-moz-range-thumb {
+		-moz-appearance: none;
+		border-radius: 20px;
+		background-color: #FFF;
+		border: 1px solid #999;
+		height: 20px;
+		width: 20px;
+	}
+*/
+.range {
+	height: 380px;
+}
+.range input {
+	transform: rotate(-90deg);	
+}
 
 /*%%%%%%%%%%%%%%%%%%%% ALL SPRITE ICONS ONLY %%%%%%%%%%%%%%%%%%%%*/
 /* MAIN PLAY PAGE */

@@ -17,26 +17,26 @@
 6 verbose parsed url   path: 'bower',
 6 verbose parsed url   href: 'bower' }
 7 silly lockFile 206e3ce5-bower bower
-8 verbose lock bower /Users/rich.sollenne/.npm/206e3ce5-bower.lock
+8 verbose lock bower /Users/SollenneTechnology/.npm/206e3ce5-bower.lock
 9 silly lockFile 206e3ce5-bower bower
 10 silly lockFile 206e3ce5-bower bower
 11 verbose addNamed [ 'bower', '' ]
 12 verbose addNamed [ null, '*' ]
 13 silly lockFile 1240aab1-bower bower@
-14 verbose lock bower@ /Users/rich.sollenne/.npm/1240aab1-bower.lock
+14 verbose lock bower@ /Users/SollenneTechnology/.npm/1240aab1-bower.lock
 15 silly addNameRange { name: 'bower', range: '*', hasData: false }
 16 verbose request where is /bower
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 4ac6a844635730f4
+18 verbose request id 5f1d8128d5056d50
 19 verbose url raw /bower
 20 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
 21 verbose url resolved https://registry.npmjs.org/bower
 22 verbose request where is https://registry.npmjs.org/bower
-23 info trying registry request attempt 1 at 18:03:38
+23 info trying registry request attempt 1 at 21:44:47
 24 http GET https://registry.npmjs.org/bower
 25 http 200 https://registry.npmjs.org/bower
 26 silly registry.get cb [ 200,
-26 silly registry.get   { date: 'Mon, 27 Oct 2014 23:03:39 GMT',
+26 silly registry.get   { date: 'Tue, 28 Oct 2014 02:44:47 GMT',
 26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 26 silly registry.get     etag: '"CEMR1HQYCLE8N4O2HHP7EN0EZ"',
 26 silly registry.get     'content-type': 'application/json',
@@ -44,11 +44,11 @@
 26 silly registry.get     'content-length': '105358',
 26 silly registry.get     'accept-ranges': 'bytes',
 26 silly registry.get     via: '1.1 varnish',
-26 silly registry.get     age: '29',
-26 silly registry.get     'x-served-by': 'cache-atl6221-ATL',
+26 silly registry.get     age: '54',
+26 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
 26 silly registry.get     'x-cache': 'HIT',
-26 silly registry.get     'x-cache-hits': '1',
-26 silly registry.get     'x-timer': 'S1414451019.438339,VS0,VE1',
+26 silly registry.get     'x-cache-hits': '2',
+26 silly registry.get     'x-timer': 'S1414464287.874944,VS0,VE0',
 26 silly registry.get     vary: 'Accept',
 26 silly registry.get     'keep-alive': 'timeout=10, max=50',
 26 silly registry.get     connection: 'Keep-Alive' } ]
@@ -118,13 +118,13 @@
 29 verbose addNamed [ 'bower', '1.3.12' ]
 30 verbose addNamed [ '1.3.12', '1.3.12' ]
 31 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
-32 verbose lock bower@1.3.12 /Users/rich.sollenne/.npm/9819431c-bower-1-3-12.lock
+32 verbose lock bower@1.3.12 /Users/SollenneTechnology/.npm/9819431c-bower-1-3-12.lock
 33 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
-34 verbose lock https://registry.npmjs.org/bower/-/bower-1.3.12.tgz /Users/rich.sollenne/.npm/b05fd70b-npmjs-org-bower-bower-1-3-12-tgz.lock
+34 verbose lock https://registry.npmjs.org/bower/-/bower-1.3.12.tgz /Users/SollenneTechnology/.npm/b05fd70b-npmjs-org-bower-bower-1-3-12-tgz.lock
 35 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
 35 verbose addRemoteTarball   '37de0edb3904baf90aee13384a1a379a05ee214c' ]
-36 info retry fetch attempt 1 at 18:03:39
-37 verbose fetch to= /var/folders/49/d9l0rqk93q75yptsvsnlsj34j5n6c3/T/npm-5799-epJJ1vTT/registry.npmjs.org/bower/-/bower-1.3.12.tgz
+36 info retry fetch attempt 1 at 21:44:48
+37 verbose fetch to= /var/folders/n1/k31b489j0rb46s58zwdnk0n00000gn/T/npm-52661-aSjf4ez-/registry.npmjs.org/bower/-/bower-1.3.12.tgz
 38 http GET https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
 39 http 200 https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
 40 silly lockFile b05fd70b-npmjs-org-bower-bower-1-3-12-tgz https://registry.npmjs.org/bower/-/bower-1.3.12.tgz
@@ -218,11 +218,11 @@
 47 info install bower@1.3.12 into /usr/local/lib
 48 info installOne bower@1.3.12
 49 verbose lib/node_modules/bower unbuild
-50 verbose tar unpack /Users/rich.sollenne/.npm/bower/1.3.12/package.tgz
+50 verbose tar unpack /Users/SollenneTechnology/.npm/bower/1.3.12/package.tgz
 51 silly lockFile 1396471b-usr-local-lib-node-modules-bower tar:///usr/local/lib/node_modules/bower
-52 verbose lock tar:///usr/local/lib/node_modules/bower /Users/rich.sollenne/.npm/1396471b-usr-local-lib-node-modules-bower.lock
-53 silly lockFile 231d42e0-nne-npm-bower-1-3-12-package-tgz tar:///Users/rich.sollenne/.npm/bower/1.3.12/package.tgz
-54 verbose lock tar:///Users/rich.sollenne/.npm/bower/1.3.12/package.tgz /Users/rich.sollenne/.npm/231d42e0-nne-npm-bower-1-3-12-package-tgz.lock
+52 verbose lock tar:///usr/local/lib/node_modules/bower /Users/SollenneTechnology/.npm/1396471b-usr-local-lib-node-modules-bower.lock
+53 silly lockFile 8c36d8c8-ogy-npm-bower-1-3-12-package-tgz tar:///Users/SollenneTechnology/.npm/bower/1.3.12/package.tgz
+54 verbose lock tar:///Users/SollenneTechnology/.npm/bower/1.3.12/package.tgz /Users/SollenneTechnology/.npm/8c36d8c8-ogy-npm-bower-1-3-12-package-tgz.lock
 55 silly gunzTarPerm modes [ '755', '644' ]
 56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/bower'
 56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/bower']
@@ -237,9 +237,9 @@
 56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
 56 error      'Object.oncomplete (fs.js:107:15)' ] }
 57 error Please try running this command again as root/Administrator.
-58 error System Darwin 13.4.0
+58 error System Darwin 14.0.0
 59 error command "node" "/usr/local/bin/npm" "install" "-g" "bower"
-60 error cwd /Users/rich.sollenne/Desktop/m1
+60 error cwd /Users/SollenneTechnology/Desktop/m1
 61 error node -v v0.10.32
 62 error npm -v 1.4.28
 63 error path /usr/local/lib/node_modules/bower

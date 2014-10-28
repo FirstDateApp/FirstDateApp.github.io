@@ -1,0 +1,35 @@
+<ion-view title="Create Your Account"  hide-nav-bar="true">
+        <ion-content scroll="false"  class="match-page signup-page">
+        <div class="bar bar-header bar-light">
+			<h1 class="title"><a href="#/sign-in"><i class="icon ion-arrow-left-c"></i></a> create your account </h1>
+		</div>
+        
+         <div class="extended-logo"><h1></h1></div>
+         <div class="list reg-list">
+	        
+            <label class="item item-input">
+              <span class="input-label">username</span>
+              <input type="text" ng-model="user.username">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">email</span>
+              <input type="text" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">password</span>
+              <input type="password" ng-model="user.password">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">zip/postal code</span>
+              <input type="text" ng-model="user.postalcode">
+            </label>
+            <span>
+            <ion-toggle ng-model="newsletters" toggle-class="toggle-calm">RECIEVE NEWSLETTERS</ion-toggle>
+            <div class="padding">
+            <button class="button button-block button-positive" ui-sref="tab.messages">
+              sign up
+            </button>
+                       
+          </div>
+        </ion-content>
+      </ion-view>
