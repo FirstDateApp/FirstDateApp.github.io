@@ -44,7 +44,7 @@ input, button, select, textarea {
 }
 
 .button.button-hollow {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-radius:30px;
 	-webkit-border-radius:30px;
 	-moz-border-radius:30px;
@@ -57,7 +57,7 @@ input, button, select, textarea {
 	min-height: auto;
 	text-transform: uppercase;
 	font-size: 13px;
-	color: #fff;
+	color: #fff !important;
 	margin-top: 20px;
 	margin-bottom:40px;
 }
@@ -69,7 +69,7 @@ input, button, select, textarea {
 }
 
 .sign-in-page {
-	background: url(../img/loginpage.png) center center no-repeat;
+	background: url(../img/loginpageNEW.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -85,7 +85,7 @@ input, button, select, textarea {
 	margin:0 auto;
 	width:90%;
 	height:32%;
-	background: url(../img/logo.png) center center no-repeat;
+	background: url(../img/logoNEW.png) center center no-repeat;
 	background-size: contain;
 	margin-top:30px;
 }
@@ -122,7 +122,7 @@ input, button, select, textarea {
 	z-index: 40;
 }
 
-.sign-in-page input[type="text"], .sign-in-page input[type="password"], .sign-in-page input[type="datetime"], .sign-in-page input[type="datetime-local"], .sign-in-page  input[type="date"], .sign-in-page input[type="month"], .sign-in-page input[type="time"], .sign-in-page input[type="week"], .sign-in-page  input[type="number"], .sign-in-page  input[type="email"], .sign-in-page input[type="url"], .sign-in-page  input[type="search"], .sign-in-page input[type="tel"], .sign-in-page input[type="color"] {
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"],  input[type="date"], input[type="month"],  input[type="time"],  input[type="week"],  input[type="number"], input[type="email"],  input[type="url"],   input[type="search"],  input[type="tel"], input[type="color"] {
 	color: #fff;
 	letter-spacing: 1px;
 	font-size: 20px;
@@ -141,7 +141,7 @@ input, button, select, textarea {
 	margin-right:5px;
 }
 .play-page {
-	background: url(../img/playbg.png) center center no-repeat;
+	background: url(../img/playbgNEW.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -150,8 +150,7 @@ input, button, select, textarea {
 	width:140px;
 	border-radius: 50%;
 	display:block;
-	/* text-indent: -9999px; WILL RE-APPLY WHEN ASSETS ARE IN */
-	border: 1px rgba(0, 0, 0, 0.30) solid;
+	text-indent: -9999px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 11px;
@@ -209,7 +208,6 @@ input, button, select, textarea {
 	width:75px;
 	height:75px;
 	display: block;
-	border: 1px rgba(0, 0, 0, 0.30) solid;
 	border-radius: 50%;
 }
 
@@ -285,7 +283,341 @@ input, button, select, textarea {
 	margin-bottom: 15px;
 }
 
+.pane[title="SPORTS"] {
+	background: url(../img/trivia-sports.png) center 30px no-repeat;
+	background-size: cover;
+}
 
+.trivia-bottom-bar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: #51bf99;
+	text-align: center;
+	height: 75px;
+	line-height: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: block;
+}
+.trivia-bottom-bar .trivia-action {
+	display: inline-block;	
+	width: 60px;	
+	position: relative;
+	top:-11px;	
+}
+.trivia-bottom-bar .skip-arrow {
+	display: inline-block;
+	width: 30px;
+}
+.trivia-bottom-bar i {
+	font-size: 50px;
+	display: inline;
+}
+
+.match-page, .settings-page {
+	background: #51bf99;
+}
+
+.extended-logo {
+	background: #fff;
+	height: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+.extended-logo h1 {
+	margin: 0 auto;
+	padding:0;
+	width: 80%;
+	height: 100%;
+	background: url(../img/extwheeliebymatch.png) center center no-repeat;
+	background-size: cover;
+}
+
+.match-page .item, .settings-page .item {
+	background:transparent;
+	padding: 0;
+	width: 90%;
+	border:none;
+	margin:0 auto;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 20px;
+}
+
+.match-page .input-label, .settings-page .input-label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: auto;
+}
+
+.match-page button, .settings-page button {
+	color: #000 !important;
+	background: #fff !important;
+	margin-top:20px !important;
+}
+
+.match-page .item.item-toggle, .settings-page .item.item-toggle {
+	border: none;
+	width: 75%;
+	padding-top: 15px;
+	margin-top: 20px;
+	overflow: visible;
+}
+.settings-page button.button-hollow {
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+}
+
+.track {
+	background-color: #000 !important;
+	border-color: #000 !important;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%% ALL SPRITE ICONS ONLY %%%%%%%%%%%%%%%%%%%%*/
+/* MAIN PLAY PAGE */
+.play-page a.play-category.play-0  {
+	background:  url(../img/SpriteSheet_Play.png) 0px 0px;
+	background-size: 203%;
+}
+.play-page a.play-category.play-0.activated  {
+	background: url(../img/SpriteSheet_Play.png) -142px 0px;
+	background-size: 203%;
+}
+
+.play-page a.play-category.play-1  {
+	background:  url(../img/SpriteSheet_Play.png) 0px -143px;
+	background-size: 203%;
+}
+.play-page a.play-category.play-1.activated   {
+	background: url(../img/SpriteSheet_Play.png) -142px -143px;
+	background-size: 203%;
+}
+
+.play-page a.play-category.play-2  {
+	background:  url(../img/SpriteSheet_Play.png) 0px -285px;
+	background-size: 203%;
+}
+.play-page a.play-category.play-2.activated   {
+	background: url(../img/SpriteSheet_Play.png) -142px -285px;
+	background-size: 203%;
+}
+
+.play-page a.play-category.play-3  {
+	background:  url(../img/SpriteSheet_Play.png) 0px -428px;
+	background-size: 203%;
+}
+.play-page a.play-category.play-3.activated   {
+	background: url(../img/SpriteSheet_Play.png) -142px -428px;
+	background-size: 203%;
+}
+
+/* FUNGAMES*/
+.fungames-page .fungames-categories a.fungame0 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px 0px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame0.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px 0px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame1 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -75px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame1.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -75px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame2 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -378px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame2.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -378px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame3 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -151px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame3.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -151px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame4 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -226px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame4.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -226px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame5 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -302px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame5.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -302px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame6 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -453px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame6.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -453px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame7 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -604px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame7.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -604px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame8 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -528px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame8.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -528px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungame9 .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px 0px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungame9.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px 0px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungames-uno .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -831px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungames-uno.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -831px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungames-pictionary .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -755px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungames-pictionary.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -755px;
+	background-size: 201%;
+}
+
+.fungames-page .fungames-categories a.fungames-scrabble .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) 1px -679px;
+	background-size: 201%;
+}
+.fungames-page .fungames-categories a.fungames-scrabble.activated .fungame-icon  {
+	background: url(../img/SpriteSheet_FunGames_1.png) -75px -679px;
+	background-size: 201%;
+}
+
+/* TRIVIA */
+.trivia-page .trivia-categories a.trivia-0 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px 0px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-0.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px 0px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-1 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -76px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-1.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -76px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-2 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -151px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-2.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -151px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-3 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -226px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-3.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -226px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-4 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -302px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-4.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -302px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-5 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -377px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-5.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -377px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-6 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -452px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-6.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -452px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-7 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -528px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-7.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -528px;
+	background-size: 301%;
+}
+
+.trivia-page .trivia-categories a.trivia-8 .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) 1px -603px;
+	background-size: 301%;
+}
+.trivia-page .trivia-categories a.trivia-8.activated .trivia-icon  {
+	background: url(../img/SpriteSheet_Trivia.png) -75px -603px;
+	background-size: 301%;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% END ALL SPRITE ICONS %%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 
 

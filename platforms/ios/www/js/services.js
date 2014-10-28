@@ -27,13 +27,13 @@ angular.module('starter.services', ['ngResource'])
   var trivias = [
     { id: 0, name: 'SPORTS' },
     { id: 1, name: 'CATS' },
-    { id: 3, name: 'FILM AND TV' },
-    { id: 4, name: 'TRAVEL' },
-    { id: 5, name: 'TECH' },
-    { id: 6, name: 'MUSIC' },
-    { id: 7, name: 'SEX' },
-    { id: 8, name: 'CELEBRITIES' },
-    { id: 9, name: 'ANIMALS' }
+    { id: 2, name: 'FILM AND TV' },
+    { id: 3, name: 'TRAVEL' },
+    { id: 4, name: 'TECH' },
+    { id: 5, name: 'MUSIC' },
+    { id: 6, name: 'SEX' },
+    { id: 7, name: 'CELEBRITIES' },
+    { id: 8, name: 'ANIMALS' }
   ];
 
   return {
@@ -51,15 +51,15 @@ angular.module('starter.services', ['ngResource'])
 .factory('Fungames', function() {
 
   var fungames = [
-    { id: 0, name: 'LIGHTNING' },
-    { id: 1, name: 'HAVE YOU' },
-    { id: 2, name: '2 TRUTHS' },
-    { id: 3, name: 'AIRPLANE' },
-    { id: 4, name: 'STARING' },
-    { id: 5, name: 'TUNE' },
+    { id: 0, name: 'FAST GUESS' },
+    { id: 1, name: 'DARE ME' },
+    { id: 2, name: 'TUNE QUIZ' },
+    { id: 3, name: 'TRUE LIES' },
+    { id: 4, name: 'M.A.S.H' },
+    { id: 5, name: 'CHARADES' },
     { id: 6, name: 'CHECKERS' },
-    { id: 7, name: 'M.A.S.H' },
-    { id: 8, name: 'CHARADES' }
+    { id: 7, name: 'STARE OFF' },
+    { id: 8, name: 'AIRPLANE' }
   ];
 
   return {

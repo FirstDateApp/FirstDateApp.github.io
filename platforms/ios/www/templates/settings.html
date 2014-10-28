@@ -1,5 +1,31 @@
 <ion-view title="Settings">
-        <ion-content padding="true">
-         <h1>settings page</h1>
+        <ion-content scroll="false"  class="settings-page">
+         <div class="extended-logo"><h1></h1></div>
+         <div class="list reg-list">
+	        <button class="button button-block button-hollow" ui.sref="tab.messages">
+              link facebook account
+            </button>
+            <label class="item item-input">
+              <span class="input-label">username</span>
+              <input type="text" ng-model="user.username">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">email</span>
+              <input type="text" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">password</span>
+              <input type="password" ng-model="user.password">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">zip/postal code</span>
+              <input type="text" ng-model="user.postalcode">
+            </label>
+            <span>
+            <ion-toggle ng-model="newsletters" toggle-class="toggle-calm">RECIEVE NEWSLETTERS</ion-toggle>
+            <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn(user)">
+              update now
+            </button>
         </ion-content>
       </ion-view>

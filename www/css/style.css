@@ -358,7 +358,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 .match-page button, .settings-page button {
 	color: #000 !important;
 	background: #fff !important;
-	margin-top:30px !important;
+	margin-top:20px !important;
 }
 
 .match-page .item.item-toggle, .settings-page .item.item-toggle {
